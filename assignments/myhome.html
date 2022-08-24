@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="myhome.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="mybooks.html">My Books</a>
+        <a href="bookmark.html">Bookmarks</a>
+       </nav>
+
+       <!-- form -->
+
+       <div class="form">
+
+          <h1>Library Manegement Stystem</h1>
+
+        <form method="post"> 
+
+            <input type="text" name="bookname" id="bookname" placeholder="Book Name"/><br></br>
+            <input type="text" name="authorname" id="authorname" placeholder="Author Name"/><br></br>
+            <input type="text" name="bookdescprition" id="bookdescprition" placeholder="Book Description"/><br></br>
+            <input type="text" name="date" id="date" placeholder="Adding Date"/><br></br>
+            <input type="text" name="bookcategory" id="bookcategory" placeholder="Book Category"/><br></br>
+            <input type="text" name="bookprice" id="bookprice" placeholder="Book price"/><br></br>
+            <button onclick="store()"> store emementt</button>
+
+   </form>
+
+       </div>
+</body>
+</html>
+
+
+<script>
+    // var bookname = document.getElementById("bookname")
+    // localStorage.setItem("bookname")
+
+
+
+    function store(){
+
+    var bookname = document.getElementById("bookname")
+    localStorage.setItem("bookname")
+
+
+
+    }
+</script>
